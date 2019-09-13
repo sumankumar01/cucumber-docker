@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\GuruJi\cucumber"/>
 			<item value="D:\GuruJi\cucumberextentreport\automation"/>
 		</list>
 		<list key="projectNameTemplate">
