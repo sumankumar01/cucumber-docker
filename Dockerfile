@@ -10,4 +10,4 @@ ENV BROWSER = chrome
 ENV POMM  = cucumberextentreport
 ENV SELENIUM_HUB = http://192.168.33.10:4444
 
-ENTRYPOINT java -cp container-test.jar:libs/* -DseleniumHubHost=$SELENIUM_HUB -Dbrowser=$BROWSER CucumberOptions/TestRunner  /usr/share/suman/$POMM
+ENTRYPOINT java -cp container-test.jar:libs/* -DseleniumHubHost=$SELENIUM_HUB -Dbrowser=$BROWSER CucumberOptions/TestRunner
