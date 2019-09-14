@@ -32,25 +32,9 @@ public class TestRunner {
 	
 		
 
-	@BeforeClass
-	public static void startDebugCukesTest() {
-	    System.out.println(">> Starting run all cucumber test suite");
-	   //ExtentManager.getReporter("/sysroot/home/suman/automation/cucmberautomation/extentreportcucumber.html");
-	  // ExtentProperties extentProperties = ExtentProperties.INSTANCE;
-	// extentProperties.setExtentXServerUrl("http://localhost:1337");
-	// extentProperties.setProjectName("MyProject");
-	 //extentProperties.setReportPath("output/myreport.html");
-	}
-	
-	@AfterClass
-	public static void writeExtentReport() {
-	///	Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
-	
-		//Reporter.loadXMLConfig("sysroot/home/suman/automation/cucmberautomation/extent-config.xml");
-		 
-	    System.out.println(">> Finished run all cucumber test suite");
-	   //ExtentManager.closeReporter();
-	}
+	 public static void main(String[] args) throws Throwable {
+	        cucumber.api.cli.Main.main(args );
+	    }
 
 
 }
