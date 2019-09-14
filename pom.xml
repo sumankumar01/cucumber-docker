@@ -109,7 +109,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 							<addClasspath>true</addClasspath>
 							 <classpathPrefix>lib/</classpathPrefix>
 							
-					<testSourceDirectory>cucumber/src/test/java/CucumberOptions</testSourceDirectory> 
+					<testSourceDirectory>cucumber/src/test/java</testSourceDirectory> 
 						<includes>
 							<include>**/*TestRunner.java</include>
 						</includes>
