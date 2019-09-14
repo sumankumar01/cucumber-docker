@@ -24,7 +24,7 @@ import managers.FileReaderManager;
 		       },
 			
 		
-		 features={"classpath:features"},
+		 features={"//src//test//resources//features//"},
 		glue={"StepDefinitions"}
 		
 		)
