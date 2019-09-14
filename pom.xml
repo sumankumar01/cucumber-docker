@@ -111,7 +111,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 							
 					
 						<includes>
-							<include>**/*TestRunner.java</include>
+							<include>**/CucumberOptions/*</include>
 						</includes>
 						<!-- <excludes> <exclude>**/*RunCukesTest.java</exclude> </excludes> -->
 					
