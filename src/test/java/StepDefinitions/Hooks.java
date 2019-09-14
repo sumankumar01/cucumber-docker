@@ -40,9 +40,9 @@ public class Hooks
 	    public Hooks() {
 	        System.out.println("_____________ INITIALIZE HOOKS _____________");
 	    }
-	public Hooks(Shareobjects context) {
+/*	public Hooks(Shareobjects context) {
 		testContext = context;
-	}
+	}*/
 	//public static abc="";
 	//private static boolean skipFlag = true;
 	@Before
@@ -83,7 +83,7 @@ public class Hooks
 	        //End the logger test for each scenario
 	        //ExtentTestManager.grandchildgetTest();
 	      // ExtentTestManager.endTest();
-	      testContext.getWebDriverManager().closeDriver();
+	    //  testContext.getWebDriverManager().closeDriver();
 	}
 	
 	/*@BeforeStep
