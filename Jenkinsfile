@@ -41,7 +41,7 @@ pipeline {
                
 				sh "docker run -d --rm -i --name zalenium -p 4444:4444  -v /var/run/docker.sock:/var/run/docker.sock -v /tmp/videos:/home/seluser/videos --privileged dosel/zalenium start"
                 sleep(time:80,unit:"SECONDS") 
-			   sh "docker run --rm -e SELENIUM_HUB=${seleniumHub}  -e BROWSER=chrome -e MODULE=TestRunner -v ${WORKSPACE}/AutomationPipeline:/usr/share/suman/test-output vagrant/containertest"
+			   sh "docker run --rm -e SELENIUM_HUB=${seleniumHub}  -e BROWSER=chrome -e MODULE=CucumberOptions.TestRunner  -v ${WORKSPACE}/AutomationPipeline:/usr/share/suman/test-output vagrant/containertest"
 				//sh './node_modules/.bin/wdio wdio.conf.js'
 
 				//archive all the files under 'search' directory
